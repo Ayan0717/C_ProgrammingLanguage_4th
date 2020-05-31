@@ -69,8 +69,8 @@ int main(void)
 	printf("請輸入一長度最多為10字串:");
 	scanf("%s",str);
 	printf("(a) \"%s\"\n",str);
-	printf("(b) \\%20s\\\n",str1);
-	printf("(c) \\%-20s\\\n",str1);
+	printf("(b) \\%20s\\\n",str);
+	printf("(c) \\%-20s\\\n",str);
 	
 	printf("------------------------------\n");
 	printf("prog 4_Ex_14\n");
@@ -101,22 +101,43 @@ int main(void)
 	printf("prog 4_Ex_17\n");
 	char ch1,ch2;
 	printf("請輸入第一個字元:");
-	scanf("%c",&ch1);
+	scanf(" %c",&ch1);
 	printf("請輸入第二個字元:");
 	scanf(" %c",&ch2);
-	printf("ch1=%c, ch2=%c\n",ch1,ch2);
+	printf("(b)ch1=%c, ch2=%c\n",ch1,ch2);
 	char ch3,ch4;
 	printf("請輸入第一個字元:");
-	scanf("%c",&ch3);
+	scanf(" %c",&ch3);
 	fflush(stdin);
 	printf("請輸入第二個字元:");
 	scanf("%c",&ch4);
-	printf("ch3=%c, ch4=%c\n",ch3,ch4);
+	printf("(c)ch3=%c, ch4=%c\n",ch3,ch4);
 
 	printf("------------------------------\n");
 	printf("prog 4_Ex_19\n");
+	int num9;
+	char ch5;
+	printf("請輸入一個整數:");
+	scanf("%d",&num9);
+	fflush(stdin);
+	printf("請輸入一個字元:");
+	ch5=getchar();
+	printf("num=%d, ASCII of ch=%d\n",num9, ch5);
+	
 	printf("------------------------------\n");
 	printf("prog 4_Ex_20\n");
+	char ch6,ch7;
+	printf("請輸入一個字元:");
+	ch6=getche();
+	printf("您輸入的字元是:");
+	putchar(ch6);
+	putchar('\n');
+	printf("請輸入一個字元:");
+	ch7=getch();
+	printf("您輸入的字元是:");
+	putchar(ch7);
+	putchar('\n');
+	
 	system("pause");
 	return 0;
 } 
